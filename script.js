@@ -20,12 +20,12 @@ function addTask(){
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-         alert("Task completed");
+       //  alert("Task completed");
         saveData();
     }
     else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
-        alert("Task deleted");
+      //  alert("Task deleted");
         saveData();
     }
 }, false);
